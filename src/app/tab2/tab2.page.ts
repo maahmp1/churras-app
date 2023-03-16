@@ -13,6 +13,7 @@ export class Tab2Page {
   time1: number = 0;
   time2: number = 0;
 
+
   constructor() {}
 
   adicionarPontos(valor: number) {
@@ -28,4 +29,6 @@ export class Tab2Page {
     this.time1 = 0;
     this.time2 = 0;
   }
+
+
 }
