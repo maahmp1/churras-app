@@ -9,26 +9,53 @@ import { Component } from "@angular/core";
 
 export class Tab2Page {
 
-  pontos: number = 1;
-  time1: number = 0;
-  time2: number = 0;
-
+  ponto = 1;
+  time1 = 0;
+  time2 = 0;
 
   constructor() {}
 
-  adicionarPontos(valor: number) {
-    this.pontos = valor;
+  botao1(){
+    this.ponto = 1;
+  }
+  botao3(){
+    this.ponto = 3;
+  }
+  botao6(){
+    this.ponto = 6;
   }
 
-  somapontos(valor: number) {
-    valor += this.pontos;
+  botao9(){
+    this.ponto = 9;
   }
 
-  zerarPontos() {
-    this.pontos = 0;
-    this.time1 = 0;
-    this.time2 = 0;
+  botao12(){
+    this.ponto = 12;
   }
 
+
+  maistime1(){
+    this.time1 =this.time1 + this.ponto;
+  }
+  menostime1(){
+    this.time1 =this.time1 - this.ponto;
+
+    if(this.ponto < 0){
+      this.time1 = 0;
+    }
+
+  }
+
+  maistime2(){
+    this.time2 =this.time2 + this.ponto;
+  }
+
+  menostime2(){
+    this.time2 =this.time2 - this.ponto;
+
+    if(this.ponto < 0){
+      this.time2 = 0;
+    }
+  }
 
 }
