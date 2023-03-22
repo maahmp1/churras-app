@@ -11,36 +11,36 @@
     </ion-toolbar>
   </ion-header>
 
-  <h1>Valendo: {{ponto}}</h1>
+  <h1 class="textoCentro">Valendo: {{ponto}}</h1>
 
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-button color="success" expand="block" (click)="botao1()">1</ion-button>
+        <ion-button class="ponto" color="azul" expand="block" (click)="botao1()">1</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="success" expand="block" (click)="botao3()">3</ion-button>
+        <ion-button class="ponto" color="azul" expand="block" (click)="botao3()">3</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="success" expand="block" (click)="botao6()">6</ion-button>
+        <ion-button class="ponto" color="azul" expand="block" (click)="botao6()">6</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="success" expand="block" (click)="botao9()">9</ion-button>
+        <ion-button class="ponto" color="azul" expand="block" (click)="botao9()">9</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="success" expand="block" (click)="botao12()">12</ion-button>
+        <ion-button class="ponto"  color="azul" expand="block" (click)="botao12()">12</ion-button>
       </ion-col>
     </ion-row>
 
     <ion-grid>
       <ion-row>
         <ion-col>
-          <ion-button color="success"expand="block"(click)="maistime1()">+</ion-button>
+          <ion-button color="secondary"expand="block"(click)="maistime1()">+</ion-button>
         </ion-col>
         <ion-col></ion-col>
         <ion-col>
           <ion-button
-            color="success" expand="block" (click)="maistime2()"  >+</ion-button>
+            color="secondary" expand="block" (click)="maistime2()"  >+</ion-button>
         </ion-col>
       </ion-row>
 
@@ -57,17 +57,17 @@
 
       <ion-row>
         <ion-col>
-          <ion-button color="danger" expand="block" (click)="menostime1()">-</ion-button >
+          <ion-button color="light" expand="block" (click)="menostime1()">-</ion-button >
         </ion-col>
         <ion-col></ion-col>
 
         <ion-col>
-          <ion-button color="danger" expand="block" (click)="menostime2()">-</ion-button>
+          <ion-button color="light" expand="block" (click)="menostime2()">-</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
 
-    <h1>Partidas</h1>
+    <h1 class="textoCentro">Partidas</h1>
 
     <ion-grid>
       <ion-row>
@@ -90,7 +90,7 @@
 
     <ion-row>
       <ion-col>
-        <ion-button color="warning" expand="block" (click)="zerarPontos()">Zerar pontos</ion-button>
+        <ion-button color="light" expand="block" (click)="zerarPontos()">Zerar pontos</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
