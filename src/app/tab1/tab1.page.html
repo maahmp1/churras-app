@@ -5,16 +5,14 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div class="container coin">
-    <img src="image" alt="" />
-    <h1 class="ion-text-center"> {{info}}</h1>
+  <div class="container-coin">
+    <img [@rotateState]="state" [src]="image" alt="" class="icon">
+    <h1 class="ion-text-center bonito">{{info}}</h1>
   </div>
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar class="btn"color="dark">
-    <ion-title class="ion-text-center">
-      Jogar a moeda!
-    </ion-title>
+  <ion-toolbar (click)="jogarMoeda()" class="btn">
+    <ion-title class="ion-text-center">Jogar a Moeda!</ion-title>
   </ion-toolbar>
 </ion-footer>

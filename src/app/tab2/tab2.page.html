@@ -75,7 +75,7 @@
           <h1>Time 1:</h1>
         </ion-col>
         <ion-col>
-          <h1>{{time1}}</h1>
+          <h1>{{totalTime1}}</h1>
         </ion-col>
       </ion-row>
       <ion-row>
@@ -83,16 +83,14 @@
           <h1>Time 2:</h1>
         </ion-col>
         <ion-col>
-          <h1>{{time2}}</h1>
+          <h1>{{totalTime2}}</h1>
         </ion-col>
       </ion-row>
     </ion-grid>
 
     <ion-row>
       <ion-col>
-        <ion-button color="warning" expand="block"
-          >Zerar pontos</ion-button
-        >
+        <ion-button color="warning" expand="block" (click)="zerarPontos()">Zerar pontos</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
