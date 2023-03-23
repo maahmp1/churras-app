@@ -21,13 +21,13 @@ export class Tab1Page {
   coroa = 'assets/coroa.png';
   logo = 'assets/logo.png';
   image = this.logo;
-  info = 'Clique no botão para jogar!';
+  info = 'clique no botão para jogar!';
   state = 'default';
 
   constructor() { }
 
   jogarMoeda(){
-    this.info = 'Girando...';
+    this.info = 'girando...';
     this.image = this.logo;
     this.state = this.state === 'default' ? 'rotated' : 'default';
 
@@ -37,7 +37,7 @@ export class Tab1Page {
         this.info = "cara!"
       }else{
         this.image = this.coroa;
-        this.info = "Coroa!"
+        this.info = "coroa!"
       }
     },2000);
   }

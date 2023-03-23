@@ -10,11 +10,29 @@
 img {
   height: 50%;
   border-radius: 50%;
-  box-shadow: 36px 37px 27px -11px rgba(0, 0, 0, 0.43);
-  -webkit-box-shadow: 36px 37px 27px -11px rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 36px 37px 27px -11px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 32px 24px 33px 0px rgba(0,0,0,0.38);
+  -moz-box-shadow: 32px 24px 33px 0px rgba(0,0,0,0.38);
+  box-shadow: 32px 24px 33px 0px rgba(0,0,0,0.38);
 }
 
-.btn{
-  cursor:pointer;
+.btn {
+  cursor: pointer;
+}
+ion-header{
+  --ion-background-color: #3f5561;
+  --ion-text-color: #ffffff;
+}
+
+ion-content {
+  --ion-background-color: #a9c5d4;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  --ion-text-color: #ffffff;
+
+}
+
+ion-footer{
+  --ion-background-color:#437b99;
+  --ion-text-color: #ffffff;
+
+
 }

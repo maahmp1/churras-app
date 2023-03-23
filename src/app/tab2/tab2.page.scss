@@ -1,8 +1,14 @@
+ion-header{
+  --ion-background-color: #3f5561;
+  --ion-text-color: #ffffff;
+}
+
 ion-content {
   --ion-background-color: #a9c5d4;
   --ion-text-color: #ffffff;
   --ion-toolbar-background:#3a6075;
   font-family: 'Edu NSW ACT Foundation', cursive;
+
 
   .textoCentro {
     text-align: center;
