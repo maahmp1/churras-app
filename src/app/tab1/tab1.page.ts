@@ -17,27 +17,27 @@ import { Component } from '@angular/core';
 
 export class Tab1Page {
 
-  cara = 'assets/cara.png';
-  coroa = 'assets/coroa.png';
-  logo = 'assets/logo.png';
-  image = this.logo;
-  info = 'clique no botão para jogar!';
+  cara = 'assets/dog head.png'; // dogs by Sara Paske from <a href="https://thenounproject.com/browse/icons/term/dogs/" target="_blank" title="dogs Icons">Noun Project</a> (CC BY 3.0)
+  coroa = 'assets/dog tail.png'; // wagging tail by Sara Paske from <a href="https://thenounproject.com/browse/icons/term/wagging-tail/" target="_blank" title="wagging tail Icons">Noun Project</a> (CC BY 3.0)
+  logo = 'assets/coin.png';   // coin by Kantor Tegalsari from <a href="https://thenounproject.com/browse/icons/term/coin/" target="_blank" title="coin Icons">Noun Project</a> (CC BY 3.0)
+  image = this.logo; 
+  info = 'Click at the button to PLAY!';
   state = 'default';
 
   constructor() { }
 
   jogarMoeda(){
-    this.info = 'girando...';
+    this.info = 'Throwing...';
     this.image = this.logo;
     this.state = this.state === 'default' ? 'rotated' : 'default';
 
     setTimeout(() => {
       if(Math.random() <0.5){
         this.image = this.cara;
-        this.info = "cara!"
+        this.info = "Heads!"
       }else{
         this.image = this.coroa;
-        this.info = "coroa!"
+        this.info = "Tails!"
       }
     },2000);
   }
